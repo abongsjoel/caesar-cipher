@@ -2,7 +2,7 @@
 
 > In this project, I built a simple Caesar cipher conversion algorithm
 
-The project built a takes a string of characters and a cipher factor and returns the caesar cipher version of the string.
+The project takes a string of characters and a cipher factor and returns the caesar cipher version of the string.
 
 
 ## Built With
@@ -33,7 +33,7 @@ The project built a takes a string of characters and a cipher factor and returns
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](Add link here).
+Feel free to check the [issues page](https://github.com/abongsjoel/caesar-cipher/issues).
 
 
 ## Show your support
