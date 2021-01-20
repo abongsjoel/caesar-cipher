@@ -17,9 +17,12 @@ def caesar_cipher (message, factor)
     else
       converted_code = original_code + factor
 
-      if converted_code > max
+      if converted_code > max    #wrap for positive factor
         extra = converted_code - max
         converted_code = min + extra -1
+      elsif converted_code < min  #wrap for negative factor
+        extra = min - converted_code
+        converted_code = max - extra + 1
       end
       result += converted_code.chr
     end
