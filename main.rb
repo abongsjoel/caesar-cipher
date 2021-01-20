@@ -15,7 +15,13 @@ def caesar_cipher (message, factor)
     unless original_code.between?(min, max)
       result += letter
     else
-      result += original_code.to_s
+      converted_code = original_code + factor
+
+      if converted_code > max
+        extra = converted_code - max
+        converted_code = min + extra -1
+      end
+      result += converted_code.chr
     end
   end
 
