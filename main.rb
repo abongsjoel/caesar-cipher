@@ -3,7 +3,20 @@ def caesar_cipher (message, factor)
 
   message.each_char do |letter|
     original_code = letter.ord 
-    result += original_code.to_s
+
+    min = 97
+    max = 122
+
+    if letter === letter.capitalize then
+      min = 65
+      max = 90
+    end
+    
+    unless original_code.between?(min, max)
+      result += letter
+    else
+      result += original_code.to_s
+    end
   end
 
   result
